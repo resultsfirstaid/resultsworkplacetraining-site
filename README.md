@@ -1,4 +1,4 @@
-# Results Workplace Training — deployment-ready starter 
+# Results Workplace Training — deployment-ready starter
 
 Static responsive website based on approved V2 concept, with a Cloudflare Pages Function for enquiry delivery.
 
@@ -45,3 +45,9 @@ The site is a single static HTML file, plus Pages Function. No CMS, database, bu
 - Publishing requires BOTH `courses.active=true` and `workplace_course_content.published=true`.
 - A successful build log should say `Generated course listing and 9 published course pages.` (number varies). If zero are published, the build fails visibly rather than silently deploying an empty catalogue.
 - Generated HTML now uses the site's maroon/navy design and fixes the enquiry deep link to `/?course=slug#enquire`.
+
+### Shared site header and footer
+
+The build reads `partials/announcement.html`, `partials/header.html`, and `partials/footer.html` and inserts **the same markup** into the homepage and all generated course pages. Edit these three files to update navigation, branding, announcement or footer across the whole site. The shared styles come from the homepage `<style>` blocks, so visual changes carry over too. Always deploy through the configured Cloudflare build command; opening `index.html` directly from GitHub will show placeholders until the build runs.
+
+Navigation uses absolute home-section links (`/#why`, `/#accounts`, `/#testimonials`, `/#enquire`), so they work from course detail pages as well as the homepage. The training menu item opens `/courses/`.
