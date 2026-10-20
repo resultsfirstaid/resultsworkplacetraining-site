@@ -1,4 +1,4 @@
-# Results Workplace Training — deployment-ready starter
+# Results Workplace Training — deployment-ready starter 
 
 Static responsive website based on approved V2 concept, with a Cloudflare Pages Function for enquiry delivery.
 
