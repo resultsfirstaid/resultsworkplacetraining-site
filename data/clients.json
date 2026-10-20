@@ -1,9 +1,410 @@
 [
   {
+    "id": "drake",
+    "name": "Drake",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "melbourne-demons",
+    "name": "Melbourne Demons",
+    "logo": null,
+    "industry": null,
+    "featured": true,
+    "priority": 12
+  },
+  {
+    "id": "la-trobe-university",
+    "name": "La Trobe University",
+    "logo": null,
+    "industry": null,
+    "featured": true,
+    "priority": 9
+  },
+  {
+    "id": "nathalia-secondary-college",
+    "name": "Nathalia Secondary College",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "eden-academy",
+    "name": "Eden Academy",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "modular-cranes",
+    "name": "Modular Cranes",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "sturt-street-early-learning-centre",
+    "name": "Sturt Street Early Learning Centre",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "air-force",
+    "name": "Air Force",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "flemington-medical-centre",
+    "name": "Flemington Medical Centre",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "kubota",
+    "name": "Kubota",
+    "logo": null,
+    "industry": null,
+    "featured": true,
+    "priority": 7
+  },
+  {
+    "id": "pakenham-family-health",
+    "name": "Pakenham Family Health",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "geelong-cats",
+    "name": "Geelong Cats",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "bunnings",
     "name": "Bunnings",
-    "logo": "/assets/clients/bunnings.svg",
-    "industry": "Retail",
+    "logo": null,
+    "industry": null,
     "featured": true,
     "priority": 1
+  },
+  {
+    "id": "lollypop-creek-primary-school",
+    "name": "Lollypop Creek Primary School",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "mason-fresh",
+    "name": "Mason Fresh",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "opsm",
+    "name": "OPSM",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "the-australian-workers-union",
+    "name": "The Australian Workers Union",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "western-bulldogs",
+    "name": "Western Bulldogs",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "fisher-paykel",
+    "name": "Fisher & Paykel",
+    "logo": null,
+    "industry": null,
+    "featured": true,
+    "priority": 6
+  },
+  {
+    "id": "infrabuild-steel",
+    "name": "Infrabuild Steel",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "unitedcare-ageing",
+    "name": "UnitedCare Ageing",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "point-cook-retirement-village",
+    "name": "Point Cook Retirement Village",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "isuzu",
+    "name": "Isuzu",
+    "logo": null,
+    "industry": null,
+    "featured": true,
+    "priority": 5
+  },
+  {
+    "id": "hopper-motor-group",
+    "name": "Hopper Motor Group",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "snap-fitness",
+    "name": "Snap Fitness",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "nando-s",
+    "name": "Nando's",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "guardian",
+    "name": "Guardian",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "altona-college",
+    "name": "Altona College",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "woolworths",
+    "name": "Woolworths",
+    "logo": null,
+    "industry": null,
+    "featured": true,
+    "priority": 2
+  },
+  {
+    "id": "toll",
+    "name": "Toll",
+    "logo": null,
+    "industry": null,
+    "featured": true,
+    "priority": 4
+  },
+  {
+    "id": "city-of-ballarat",
+    "name": "City of Ballarat",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "carlton-blues",
+    "name": "Carlton Blues",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "beacon-lighting",
+    "name": "Beacon Lighting",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "hobson-bay-city-council",
+    "name": "Hobson Bay City Council",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "coles",
+    "name": "Coles",
+    "logo": null,
+    "industry": null,
+    "featured": true,
+    "priority": 3
+  },
+  {
+    "id": "st-kilda",
+    "name": "St Kilda",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "djerriwarrh-community",
+    "name": "Djerriwarrh Community",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "specsavers",
+    "name": "Specsavers",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "lyka-pet-food",
+    "name": "Lyka Pet Food",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "beginnings-early-learners-centre",
+    "name": "Beginnings Early Learners Centre",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "victoria-university",
+    "name": "Victoria University",
+    "logo": null,
+    "industry": null,
+    "featured": true,
+    "priority": 10
+  },
+  {
+    "id": "crema-construction",
+    "name": "Crema Construction",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "mind-australia",
+    "name": "Mind Australia",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "cleanaway",
+    "name": "Cleanaway",
+    "logo": null,
+    "industry": null,
+    "featured": true,
+    "priority": 11
+  },
+  {
+    "id": "netafim",
+    "name": "Netafim",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "essendon-bombers",
+    "name": "Essendon Bombers",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "scouts-victoria",
+    "name": "Scouts Victoria",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "bendigo-southeast-college",
+    "name": "Bendigo Southeast College",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "curves",
+    "name": "Curves",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "north-melbourne-kangaroos",
+    "name": "North Melbourne Kangaroos",
+    "logo": null,
+    "industry": null,
+    "featured": false,
+    "priority": 999
+  },
+  {
+    "id": "the-langham",
+    "name": "The Langham",
+    "logo": null,
+    "industry": null,
+    "featured": true,
+    "priority": 8
   }
 ]
