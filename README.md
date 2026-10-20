@@ -1,4 +1,4 @@
-# Results Workplace Training — deployment-ready starter 
+# Results Workplace Training — deployment-ready starter
 
 Static responsive website based on approved V2 concept, with a Cloudflare Pages Function for enquiry delivery.
 
@@ -34,3 +34,14 @@ The site is a single static HTML file, plus Pages Function. No CMS, database, bu
 5. Redeploy. The build generates `/courses/`, one `/courses/<slug>/` page per approved course, and `/data/workplace-courses.json`. Each course-data change needs a new deployment.
 6. Existing `/api/enquiry` continues to email via Resend; it is not yet stored in Supabase. No Acuity connection is added.
 7. If your Cloudflare Pages Git integration does not accept repository-root output `/`, configure a staging output folder with a copy step; do not move `functions/` into the static output.
+
+
+## FIXED Cloudflare Pages deployment settings
+- Build command: `node scripts/build-courses.mjs`
+- Build output directory: `dist` (NOT `/` or repository root)
+- Framework preset: None
+- Keep `functions/` in the repository root; Cloudflare Pages discovers it separately.
+- Set `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` in the Production build environment, then **retry deployment**. Do not put the key in frontend files.
+- Publishing requires BOTH `courses.active=true` and `workplace_course_content.published=true`.
+- A successful build log should say `Generated course listing and 9 published course pages.` (number varies). If zero are published, the build fails visibly rather than silently deploying an empty catalogue.
+- Generated HTML now uses the site's maroon/navy design and fixes the enquiry deep link to `/?course=slug#enquire`.
