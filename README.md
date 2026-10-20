@@ -24,3 +24,13 @@ Open `index.html` in a browser to inspect layout. Form submissions require deplo
 
 ## Editing
 The site is a single static HTML file, plus Pages Function. No CMS, database, build dependencies or paid framework required.
+
+
+## Supabase-backed workplace course pages
+1. Run `sql/01_workplace_courses.sql` once in Supabase SQL Editor.
+2. Review and edit `workplace_course_content` records; set `published=true` only for approved offerings. Check qualification codes and claims first.
+3. In Cloudflare Pages project build settings, set **Build command** to `node scripts/build-courses.mjs` and **Build output directory** to `/` (repository root). No framework preset.
+4. Add **build-time** environment secrets `SUPABASE_URL` (Supabase project URL) and `SUPABASE_SERVICE_ROLE_KEY` (server-only service role key). Never expose these in HTML or client-side JavaScript. Do not prefix with PUBLIC_.
+5. Redeploy. The build generates `/courses/`, one `/courses/<slug>/` page per approved course, and `/data/workplace-courses.json`. Each course-data change needs a new deployment.
+6. Existing `/api/enquiry` continues to email via Resend; it is not yet stored in Supabase. No Acuity connection is added.
+7. If your Cloudflare Pages Git integration does not accept repository-root output `/`, configure a staging output folder with a copy step; do not move `functions/` into the static output.
