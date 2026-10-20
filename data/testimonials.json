@@ -1,10 +1,122 @@
 [
   {
-    "id": "hoppers-motor-group",
+    "id": "beginnings-early-learners-centre-kellie",
+    "company": "Beginnings Early Learners Centre",
+    "author": "Kellie",
+    "quote": "The training was amazing, actually the best session I've ever had. Learned so much and went away with stuff we can use, really great. 110% satisfied, would like Harvey and Ernesto again.",
+    "featured": true,
+    "category": "training"
+  },
+  {
+    "id": "hoppers-motor-group-paul",
     "company": "Hoppers Motor Group",
     "author": "Paul",
-    "quote": "The personal support I received from the admin team is 5-star and very fast.",
-    "category": "service",
-    "featured": true
+    "quote": "The personal support I received from the admin team is 5-star and very fast. I always get a reply straight away and the problem is solved. Annalisa and Baljinder are very helpful, and doing our CPR training each year is very simple and easy to organise. Thank you!",
+    "featured": true,
+    "category": "service"
+  },
+  {
+    "id": "eden-academy-chloe",
+    "company": "Eden Academy",
+    "author": "Chloe",
+    "quote": "Training was great. You guys are always amazing. Staff were engaged and happy.",
+    "featured": false,
+    "category": "training"
+  },
+  {
+    "id": "nathalia-secondary-college-lisa",
+    "company": "Nathalia Secondary College",
+    "author": "Lisa",
+    "quote": "The training was so good, it was wonderful. Harvey was fantastic, he was friendly and to the point. The Blended training and the after school session really worked for them.",
+    "featured": false,
+    "category": "training"
+  },
+  {
+    "id": "djerriwarrh-community-tanya",
+    "company": "Djerriwarrh Community",
+    "author": "Tanya",
+    "quote": "Training went great. Ann was brilliant. The attendees said she was really good.",
+    "featured": false,
+    "category": "training"
+  },
+  {
+    "id": "flemington-medical-alison",
+    "company": "Flemington Medical",
+    "author": "Alison",
+    "quote": "We love Harvey, the training was so good. I feel like I learned the most this time. He can come back.",
+    "featured": false,
+    "category": "training"
+  },
+  {
+    "id": "lyka-pet-food-baden",
+    "company": "Lyka Pet Food",
+    "author": "Baden",
+    "quote": "The training went really well. Obie was amazing. He provided good information and made some suggestions that they will implement.",
+    "featured": false,
+    "category": "training"
+  },
+  {
+    "id": "netafim-najaf",
+    "company": "Netafim",
+    "author": "Najaf",
+    "quote": "The training was good, it was well presented, interactive and engaging. Would have liked some more time at the end for questions and answers.",
+    "featured": false,
+    "category": "training"
+  },
+  {
+    "id": "lollypop-creek-primary-school-jan",
+    "company": "Lollypop Creek Primary School",
+    "author": "Jan",
+    "quote": "The training was fabulous. We really enjoy having Harvey, the staff are really happy with him and feedback was great.",
+    "featured": false,
+    "category": "training"
+  },
+  {
+    "id": "pakenham-family-health-shaina",
+    "company": "Pakenham Family Health",
+    "author": "Shaina",
+    "quote": "Training went really well. Rory was friendly and welcoming. He was very thorough and we loved the facts he presented.",
+    "featured": false,
+    "category": "training"
+  },
+  {
+    "id": "sturt-street-elc-annabel",
+    "company": "Sturt Street ELC",
+    "author": "Annabel",
+    "quote": "Training went really well, always does. Harvey's been doing it for a long time and he is brilliant, very knowledgeable.",
+    "featured": false,
+    "category": "training"
+  },
+  {
+    "id": "mind-australia-henah",
+    "company": "Mind Australia",
+    "author": "Henah",
+    "quote": "Training was very good. Fleur the trainer was awesome. Everybody benefited from it and seemed to enjoy it.",
+    "featured": false,
+    "category": "training"
+  },
+  {
+    "id": "mason-fresh-lisa",
+    "company": "Mason Fresh",
+    "author": "Lisa",
+    "quote": "Our training was absolutely awesome, as per usual! Alex is amazing - he explains everything so well and always has a little story to go with it, which makes remembering everything much easier.",
+    "featured": true,
+    "category": "training"
+  },
+  {
+    "id": "altona-college-sarra",
+    "company": "Altona College",
+    "author": "Sarra",
+    "quote": "The training was really good, she heard excellent feedback and said that Ann was very engaging and lovely and they were very happy with training.",
+    "featured": false,
+    "category": "training"
+  },
+  {
+    "id": "point-cook-retirement-village-sharon",
+    "company": "Point Cook Retirement Village",
+    "author": "Sharon",
+    "quote": "Really enjoyed the training. Ann was very good, she was informative and entertaining. The presentation was very good, and I feel I have retained it better this time.",
+    "featured": false,
+    "category": "training"
   }
 ]
