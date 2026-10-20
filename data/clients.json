@@ -10,7 +10,7 @@
   {
     "id": "melbourne-demons",
     "name": "Melbourne Demons",
-    "logo": null,
+    "logo": "/assets/clients/Melbournefc.svg",
     "industry": null,
     "featured": true,
     "priority": 12
@@ -18,7 +18,7 @@
   {
     "id": "la-trobe-university",
     "name": "La Trobe University",
-    "logo": null,
+    "logo": "/assets/clients/latrobe.png",
     "industry": null,
     "featured": true,
     "priority": 9
@@ -74,7 +74,7 @@
   {
     "id": "kubota",
     "name": "Kubota",
-    "logo": null,
+    "logo": "/assets/clients/kubota.png",
     "industry": null,
     "featured": true,
     "priority": 7
@@ -98,7 +98,7 @@
   {
     "id": "bunnings",
     "name": "Bunnings",
-    "logo": null,
+    "logo": "/assets/clients/bunnings.svg",
     "industry": null,
     "featured": true,
     "priority": 1
@@ -146,7 +146,7 @@
   {
     "id": "fisher-paykel",
     "name": "Fisher & Paykel",
-    "logo": null,
+    "logo": "/assets/clients/fisherpaykel.png",
     "industry": null,
     "featured": true,
     "priority": 6
@@ -178,7 +178,7 @@
   {
     "id": "isuzu",
     "name": "Isuzu",
-    "logo": null,
+    "logo": "/assets/clients/isuzu.png",
     "industry": null,
     "featured": true,
     "priority": 5
@@ -226,7 +226,7 @@
   {
     "id": "woolworths",
     "name": "Woolworths",
-    "logo": null,
+    "logo": "/assets/clients/woolworths.svg",
     "industry": null,
     "featured": true,
     "priority": 2
@@ -234,7 +234,7 @@
   {
     "id": "toll",
     "name": "Toll",
-    "logo": null,
+    "logo": "/assets/clients/toll.svg",
     "industry": null,
     "featured": true,
     "priority": 4
@@ -274,7 +274,7 @@
   {
     "id": "coles",
     "name": "Coles",
-    "logo": null,
+    "logo": "/assets/clients/coles.svg",
     "industry": null,
     "featured": true,
     "priority": 3
@@ -322,7 +322,7 @@
   {
     "id": "victoria-university",
     "name": "Victoria University",
-    "logo": null,
+    "logo": "/assets/clients/victoriauniversity.svg",
     "industry": null,
     "featured": true,
     "priority": 10
@@ -346,7 +346,7 @@
   {
     "id": "cleanaway",
     "name": "Cleanaway",
-    "logo": null,
+    "logo": "/assets/clients/cleanaway.svg",
     "industry": null,
     "featured": true,
     "priority": 11
@@ -402,7 +402,7 @@
   {
     "id": "the-langham",
     "name": "The Langham",
-    "logo": null,
+    "logo": "/assets/clients/thelangham.png",
     "industry": null,
     "featured": true,
     "priority": 8
