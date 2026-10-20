@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Bunnings",
+    "logo": "/assets/clients/bunnings.svg",
+    "industry": "Retail",
+    "featured": true,
+    "priority": 1
+  }
+]
