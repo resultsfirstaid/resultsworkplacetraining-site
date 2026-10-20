@@ -74,7 +74,7 @@
   {
     "id": "kubota",
     "name": "Kubota",
-    "logo": "/assets/clients/kubota.png",
+    "logo": "/assets/clients/kubota.svg.webp",
     "industry": null,
     "featured": true,
     "priority": 7
