@@ -54,16 +54,16 @@ const groups = [
 const interiorStyles = `<style>
 :root{--interior-max:1200px}
 .interior-main{overflow:clip}.interior-main .wrap{width:min(calc(100% - 48px),var(--interior-max));max-width:var(--interior-max);margin-inline:auto;box-sizing:border-box}
-.interior-hero{background:#702940;color:white;padding:clamp(44px,5vw,72px) 0;isolation:isolate}
+.interior-hero{background:#f4e9ee;color:#53283a;padding:clamp(42px,4.5vw,66px) 0;isolation:isolate}
 .interior-hero .interior-hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:0;align-items:center}
-.interior-hero .interior-kicker{font:800 12px/1.4 Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#f8d5c6}
-.interior-main .interior-hero h1{color:#fff;font:800 clamp(44px,5vw,76px)/1.08 Manrope,sans-serif;letter-spacing:-.06em;margin:16px 0 18px;max-width:1050px}
-.interior-main .interior-hero h1 em{font-style:normal;color:#f8d5c6}.interior-main .interior-hero p{color:#f5e7e9;font-size:clamp(16px,1.4vw,19px);line-height:1.65;max-width:850px}
+.interior-hero .interior-kicker{font:800 12px/1.4 Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8c405a}
+.interior-main .interior-hero h1{color:#53283a;font:800 clamp(44px,5vw,76px)/1.08 Manrope,sans-serif;letter-spacing:-.06em;margin:16px 0 18px;max-width:1050px}
+.interior-main .interior-hero h1 em{font-style:normal;color:#8c405a}.interior-main .interior-hero p{color:#655563;font-size:clamp(16px,1.4vw,19px);line-height:1.65;max-width:850px}
 .interior-hero .interior-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.interior-hero .interior-actions .btn{background:#fff;color:#702940;border-color:#fff;text-decoration:none}
-.interior-hero .interior-actions .btn:hover{background:#f8d5c6;color:#702940}
-.interior-hero .interior-actions .btn.outline{background:transparent;color:#fff;border:1px solid #e5bdc9}
-.interior-hero .interior-actions .btn.outline:hover{background:#fff;color:#702940}
+.interior-hero .interior-actions .btn{background:#702940;color:#fff;border:1px solid #702940;text-decoration:none}
+.interior-hero .interior-actions .btn:hover{background:#532036;color:#fff;border-color:#532036}
+.interior-hero .interior-actions .btn.outline{background:transparent;color:#702940;border:1px solid #a77b8c}
+.interior-hero .interior-actions .btn.outline:hover{background:#702940;color:#fff;border-color:#702940}
 .interior-hero figure{margin:0;min-width:0}.interior-hero img{display:block;width:100%;height:clamp(310px,35vw,470px);object-fit:cover;border-radius:22px}
 .interior-hero figcaption{font-size:12px;color:#f0dce1;margin-top:12px}
 .interior-main .why-section,.interior-main .flex-section,.interior-main .corp-section{padding:clamp(66px,7vw,100px) 0}
@@ -74,10 +74,10 @@ const interiorStyles = `<style>
 .interior-main .corp-card{min-width:0}
 .interior-main .corp-band .wrap,.interior-main .flex-dark .wrap{width:min(calc(100% - 48px),var(--interior-max));max-width:var(--interior-max);margin-inline:auto}
 .interior-main .corp-cta,.interior-main .flex-cta{margin-top:48px;margin-bottom:80px}
-.interior-main .course-category-nav,.interior-main .course-category{width:min(calc(100% - 48px),var(--interior-max));max-width:var(--interior-max);margin-inline:auto}
+.interior-main .course-category-nav,.interior-main .course-category{width:min(calc(100% - 48px),var(--interior-max));max-width:var(--interior-max);margin-inline:auto;box-sizing:border-box}
 .interior-main .course-category-nav{padding-top:34px}.interior-main .course-category{padding-top:60px}
 @media(max-width:850px){.interior-hero .interior-hero-grid{grid-template-columns:1fr}.interior-hero img{height:clamp(260px,55vw,450px)}.interior-main .corp-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:600px){.interior-main .wrap,.interior-main .corp-band .wrap,.interior-main .flex-dark .wrap,.interior-main .course-category-nav,.interior-main .course-category{width:calc(100% - 36px)}.interior-hero{padding:42px 0}.interior-main .interior-hero h1{font-size:clamp(38px,10vw,54px)}.interior-main .corp-cards{grid-template-columns:1fr}}
+@media(max-width:600px){.interior-main .wrap,.interior-main .corp-band .wrap,.interior-main .flex-dark .wrap,.interior-main .course-category-nav,.interior-main .course-category,.interior-main #course-categories.wrap{width:calc(100% - 36px)}.interior-main #course-categories .course-category-nav{width:100%}.interior-hero{padding:42px 0}.interior-main .interior-hero h1{font-size:clamp(38px,10vw,54px)}.interior-main .corp-cards{grid-template-columns:1fr}}
 </style>`;
 const interiorHero = ({kicker,first,accent,lead,image,alt,cta,href,secondary,secondaryHref,caption}) => `<section class="interior-hero"><div class="wrap interior-hero-grid"><div><div class="interior-kicker">${kicker}</div><h1>${first}<br><em>${accent}</em></h1><p>${lead}</p><div class="interior-actions"><a class="btn" href="${href}">${cta} ↗</a>${secondary ? `<a class="btn outline" href="${secondaryHref}">${secondary} →</a>`:''}</div></div></div></section>`;
 // Swap only the first hero section; retain the content, images and features below.
