@@ -134,6 +134,13 @@ body{background:#fff}
 .hero.hero-featured .hero-scroll-cue a:hover{color:#fff}
 @media(max-width:950px){.hero.hero-featured{padding:56px 0 24px}.hero.hero-featured .hero-grid{grid-template-columns:1fr;gap:32px}.hero.hero-featured h1{font-size:clamp(46px,7vw,74px)}.hero.hero-featured .visual{height:460px}}
 @media(max-width:650px){.hero.hero-featured{padding:44px 0 24px}.hero.hero-featured h1{font-size:clamp(42px,10.5vw,62px);line-height:1.11}.hero.hero-featured .visual{height:350px;border-radius:18px}.hero.hero-featured .image-label{left:20px;bottom:20px;font-size:15px}.hero.hero-featured .hero-actions .btn{flex:1 1 165px}.hero.hero-featured .hero-scroll-cue{padding-top:24px}}
+</style><style>
+/* Shared sticky navigation: announcement scrolls away, white navigation stays visible. */
+.site-sticky-header{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 1px 0 rgba(32,45,61,.10)}
+.site-sticky-header .header{background:#fff}
+.site-sticky-header #mobileNav{background:#fff}
+html{scroll-padding-top:100px}
+@media(max-width:650px){html{scroll-padding-top:80px}}
 </style></head><body>
 <!-- SHARED_ANNOUNCEMENT -->
 <!-- SHARED_HEADER -->
