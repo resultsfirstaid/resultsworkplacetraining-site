@@ -141,6 +141,20 @@ body{background:#fff}
 .site-sticky-header #mobileNav{background:#fff}
 html{scroll-padding-top:100px}
 @media(max-width:650px){html{scroll-padding-top:80px}}
+</style><style id="shared-page-width">
+/* The header's .wrap is the single source of truth for horizontal alignment. */
+:root{--site-content-width:1320px;--site-gutter:42px}
+.wrap,.interior-main .wrap,.flex-main .wrap,.interior-main .corp-band .wrap,.interior-main .flex-dark .wrap,
+.interior-main .course-category-nav,.interior-main .course-category,.interior-main #course-categories.wrap{
+  width:100%;max-width:var(--site-content-width);padding-left:var(--site-gutter);padding-right:var(--site-gutter);
+  margin-left:auto;margin-right:auto;box-sizing:border-box;
+}
+/* Catalogue sections have the same edges as the header, not their own wider grid. */
+.interior-main .course-category-nav,.interior-main .course-category{max-width:var(--site-content-width)}
+/* A nested navigation row must not add a second set of gutters. */
+.interior-main #course-categories .course-category-nav{width:100%;max-width:none;padding-inline:0}
+@media(max-width:950px){:root{--site-gutter:25px}}
+@media(max-width:650px){:root{--site-gutter:20px}}
 </style></head><body>
 <!-- SHARED_ANNOUNCEMENT -->
 <!-- SHARED_HEADER -->
