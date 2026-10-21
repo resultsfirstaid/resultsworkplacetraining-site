@@ -16,12 +16,22 @@ async function query(table, select) {
 }
 const [base, workplace] = await Promise.all([
   query('courses', 'select=id,name,slug,official_title,id_number,subject,short_description,duration_text,prerequisites,covers,image_url,display_order&active=eq.true'),
-  query('workplace_course_content', 'select=course_id,workplace_title,workplace_summary,workplace_description,ideal_for,delivery_options,featured,display_order&published=eq.true')
+  query('workplace_course_content', 'select=course_id,published,workplace_title,workplace_summary,workplace_description,ideal_for,delivery_options,featured,display_order')
 ]);
-const byId = new Map(base.map(x => [x.id, x]));
+// Active base courses appear by default. A workplace-content row can override
+// the copy, or explicitly hide a course when published is false.
+const workplaceByCourseId = new Map(workplace.map(w => [w.course_id, w]));
 const safeSlug = s => typeof s === 'string' && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(s);
-const items = workplace.map(w => ({...byId.get(w.course_id), ...w})).filter(x => x.id && safeSlug(x.slug)).sort((a,b) => (a.display_order ?? 99) - (b.display_order ?? 99));
-if (items.length !== workplace.length) throw new Error('One or more published courses lack an active parent course or valid slug.');
+const items = base
+  .filter(c => !workplaceByCourseId.has(c.id) || workplaceByCourseId.get(c.id).published === true)
+  .map(c => {
+    const override = workplaceByCourseId.get(c.id) || {};
+    return { ...c, ...override, display_order: override.display_order ?? c.display_order };
+  })
+  .filter(c => safeSlug(c.slug))
+  .sort((a, b) => (a.display_order ?? 99) - (b.display_order ?? 99));
+const invalid = base.filter(c => !safeSlug(c.slug));
+if (invalid.length) console.warn(`Skipped ${invalid.length} active courses with invalid slugs.`);
 const homepage = await fs.readFile('index.html', 'utf8');
 const styles = [...homepage.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/g)].map(m => m[0]).join('\n');
 const [announcement, header, footer] = await Promise.all(['announcement','header','footer'].map(n => fs.readFile(`partials/${n}.html`, 'utf8')));
