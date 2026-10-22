@@ -326,3 +326,6 @@ for (const c of items) {
 await fs.writeFile('dist/data/workplace-courses.json', JSON.stringify(items.map(c=>({slug:c.slug,title:c.workplace_title||c.name,subject:c.subject})),null,2));
 if (!items.length) throw new Error('No published courses found. Check workplace_course_content.published, courses.active, and Supabase build secrets.');
 console.log(`Generated course listing and ${items.length} published course pages.`);
+
+// Copy short URL redirects into the published website
+fs.copyFileSync('_redirects', 'dist/_redirects');
