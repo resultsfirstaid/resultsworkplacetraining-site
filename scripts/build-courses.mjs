@@ -328,4 +328,4 @@ if (!items.length) throw new Error('No published courses found. Check workplace_
 console.log(`Generated course listing and ${items.length} published course pages.`);
 
 // Copy short URL redirects into the published website
-fs.copyFileSync('_redirects', 'dist/_redirects');
+await fs.copyFile('_redirects', 'dist/_redirects');
