@@ -9,7 +9,9 @@
   "phone_href": "tel:1300661065",
   "email": "training@resultsfirstaid.com",
   "year": "2026",
-  "public_link": "<a href=\"https://www.resultsfirstaid.com/\">Public first aid courses \u2197<span class=\"results-footer__hint\">Find and book a class</span></a>",
+  "public_link": "<a href=\"https://www.resultsfirstaid.com/\">Public first aid courses ↗<span class=\"results-footer__hint\">Find and book a class</span></a>",
   "workplace_link": "<span class=\"results-footer__current\">Workplace training<span class=\"results-footer__hint\">You are here</span></span>",
-  "services_link": "<a href=\"https://www.resultsfirstaidservices.com/\">First aid equipment &amp; services \u2197<span class=\"results-footer__hint\">Kits, AEDs and servicing</span></a>"
+  "services_link": "<a href=\"https://resultsfirstaidservices.com/\">First aid equipment &amp; services ↗<span class=\"results-footer__hint\">Kits, AEDs and servicing</span></a>",
+  "cta_label": "Enquire About Training",
+  "cta_href": "/#enquire"
 }
