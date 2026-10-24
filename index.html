@@ -175,9 +175,21 @@ html{scroll-padding-top:100px}
 .trust{background:#fff!important;border-top:0!important;border-bottom:0!important}
 /* The two benefit cards and the detail copy belong to one continuous section. */
 .editorial-proof{border-top:0!important}
-</style><style id="full-bleed-hero-corners">
-/* At tablet and smaller sizes the hero is edge-to-edge: no rounded outer corners. */
-@media(max-width:950px){.hero.hero-featured>.hero-grid{border-radius:0!important}}
+</style><style id="footer-contact-and-fullbleed-fix">
+/* A clickable footer logo should never look like a text link. */
+.footer .logo,.footer .logo:hover,.footer .logo .brand,.footer .logo .brand small{text-decoration:none!important}
+.footer .footer-contact{display:flex;flex-direction:column;align-items:flex-start;gap:7px}
+.footer .footer-contact a{text-decoration:none;color:#fff}
+.footer .footer-contact .footer-phone{font-weight:800;font-size:clamp(19px,2vw,25px);line-height:1.2}
+.footer .footer-contact .footer-email{font-weight:600;font-size:14px;color:#dbe6eb;overflow-wrap:anywhere}
+.footer .footer-contact a:hover{text-decoration:underline}
+.footer .footer-contact small{margin-top:7px;color:#bacdc1}
+/* Hero panels are full-bleed when the viewport is no wider than the max container. */
+@media(max-width:1320px){
+ .hero.hero-featured>.hero-grid,
+ .interior-main .interior-hero-grid,
+ .course-landing .landing-hero-grid{border-radius:0!important}
+}
 </style></head><body>
 <!-- SHARED_ANNOUNCEMENT -->
 <!-- SHARED_HEADER -->
