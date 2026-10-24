@@ -1,0 +1,15 @@
+{
+  "theme": "workplace",
+  "business": "Results Workplace Training",
+  "brand_suffix": "WORKPLACE TRAINING",
+  "description": "Workplace training across Victoria.",
+  "privacy_path": "/privacy.html",
+  "contact_path": "/contact/",
+  "phone_display": "1300 661 065",
+  "phone_href": "tel:1300661065",
+  "email": "training@resultsfirstaid.com",
+  "year": "2026",
+  "public_link": "<a href=\"https://www.resultsfirstaid.com/\">Public first aid courses \u2197<span class=\"results-footer__hint\">Find and book a class</span></a>",
+  "workplace_link": "<span class=\"results-footer__current\">Workplace training<span class=\"results-footer__hint\">You are here</span></span>",
+  "services_link": "<a href=\"https://www.resultsfirstaidservices.com/\">First aid equipment &amp; services \u2197<span class=\"results-footer__hint\">Kits, AEDs and servicing</span></a>"
+}

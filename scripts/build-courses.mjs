@@ -33,7 +33,7 @@ const items = base
 const invalid = base.filter(c => !safeSlug(c.slug));
 if (invalid.length) console.warn(`Skipped ${invalid.length} active courses with invalid slugs.`);
 // Pinned Results design-system assets, incorporated at build time.
-const designVersion = 'v0.1.0';
+const designVersion = 'v0.2.0';
 const designFiles = [
   'tokens/foundations.css',
   'themes/workplace.css',
@@ -52,11 +52,24 @@ for (const file of designFiles) {
   }
 }
 const sharedDesignLink = '<link rel="stylesheet" href="/assets/results-shared.css">';
+const footerTemplateUrl = `https://raw.githubusercontent.com/resultsfirstaid/results-design-system/${designVersion}/components/footer.html`;
+const footerHtmlTemplate = designLocal
+  ? await fs.readFile(path.join(designLocal, 'components/footer.html'), 'utf8')
+  : await (async () => {
+      const response = await fetch(footerTemplateUrl);
+      if (!response.ok) throw new Error(`Cannot retrieve shared footer: HTTP ${response.status}`);
+      return response.text();
+    })();
+const footerConfig = JSON.parse(await fs.readFile('data/footer.json','utf8'));
+const sharedFooter = footerHtmlTemplate.replace(/{{([a-z_]+)}}/g, (_, key) => {
+  if (!(key in footerConfig)) throw new Error(`Missing shared footer value: ${key}`);
+  return String(footerConfig[key]);
+});
 const homepage = await fs.readFile('index.html', 'utf8');
 const styles = [...homepage.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/g)].map(m => m[0]).join('\n');
 const [announcement, header, footer] = await Promise.all(['announcement','header','footer'].map(n => fs.readFile(`partials/${n}.html`, 'utf8')));
 const footerIdentityBar = `<div class="footer-rfa-identity"><div class="wrap"><span>PROUDLY PART OF <strong>RESULTS FIRST AID</strong></span><a href="https://www.resultsfirstaid.com/" target="_blank" rel="noopener noreferrer">Visit Results First Aid ↗</a></div></div>`;
-const footerWithIdentity = footer.replace(/<\/footer>/i, `${footerIdentityBar}</footer>`);
+const footerWithIdentity = sharedFooter;
 const footerIdentityStyles = `<style id="footer-rfa-identity-style">
 .footer-rfa-identity{margin-top:32px;border-top:1px solid rgba(255,255,255,.17);font-size:10px;letter-spacing:.1em;color:#d1dce5}
 .footer-rfa-identity .wrap{display:flex;justify-content:space-between;align-items:center;gap:15px;padding-top:16px;padding-bottom:16px}
