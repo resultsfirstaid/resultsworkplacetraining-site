@@ -33,7 +33,7 @@ const items = base
 const invalid = base.filter(c => !safeSlug(c.slug));
 if (invalid.length) console.warn(`Skipped ${invalid.length} active courses with invalid slugs.`);
 // Pinned Results design-system assets, incorporated at build time.
-const designVersion = 'v0.4.0';
+const designVersion = 'v0.4.1';
 const designFiles = [
   'tokens/foundations.css',
   'themes/workplace.css',
